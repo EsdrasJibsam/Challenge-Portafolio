@@ -1,0 +1,102 @@
+.skills{
+    width: 100%;
+    margin-bottom: 1rem;
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+}
+.skills__title{
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    text-shadow:  0 0 1em #0ba4db;
+}
+.skills__container{
+    margin-top: 35px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 9.375em 3.125em;
+}
+.skills__container__card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 9rem;
+    height: 11rem;
+    background: #fff;
+    border-radius: 1.25em;
+    box-shadow: 0 2.188em 5em rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+.skills__container__card:hover{
+    height: 12rem;
+}
+.skills__container__card__img{
+    position: absolute;
+    top: 1rem;
+    width: 8rem;
+    height: 7rem;
+
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.skills__container__card__img:hover{
+    top: -3rem;
+    scale: 0.95;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+.skills__container__card__img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.skills__container__card__descripcion{
+    position: absolute;
+    top: 8.5rem;
+    width: 100%;
+    padding: 0 1rem;
+    height: 2rem;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+
+@media (max-width: 425px) {
+    .skills__title{
+        font-size: 1.25rem;
+    }
+    .skills__container{
+        gap: 1em 1em;
+    }
+    .skills__container__card{
+        width: 5rem;
+        height: 5rem;
+    }
+    .skills__container__card:hover{
+        height: 5rem;
+    }
+    .skills__container__card__img{
+        top: .5rem;
+        width: 3rem;
+        height: 3rem;
+    }
+    .skills__container__card__img:hover{
+        top: -1rem;
+        scale: 0.95;
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+    }
+    .skills__container__card__descripcion{
+        top:3.5rem;
+    }
+    .skills__container__card__descripcion h2{
+        font-size: 10px;
+    }
+}

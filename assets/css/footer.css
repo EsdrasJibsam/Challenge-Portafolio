@@ -1,0 +1,15 @@
+.footer{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+}
+.footer__rodape p{
+    color: white;
+    text-align: center;
+}
+@media(max-width:425px){
+    .footer__rodape p{
+        font-size: 10px;
+    }
+}
